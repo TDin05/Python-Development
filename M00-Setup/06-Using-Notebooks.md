@@ -9,26 +9,52 @@ Jupyter Notebooks (`.ipynb` files) are the main format for lectures and exercise
 
 For theory-heavy topics, recordings and supplementary material are posted on **MS Teams**. The notebooks on GitHub are for code-focused lectures and exercises.
 
+| Action | What to use |
+|--------|------------|
+| Reading lecture notebooks | Clone the main repo — or open via Binder |
+| Submitting exercise notebooks | GitHub Classroom assignment link — always |
+
+These are kept separate. Never submit exercises to the main repo.
+
+---
+
+## Getting the Lecture Notebooks
+
+All lecture notebooks live in the main course repo. Clone it once at the start of the semester and you have everything:
+
+```bash
+git clone https://github.com/mcc-bsit-2526/Python-Development.git
+```
+
+Open the cloned folder in VS Code and all notebooks are there. When new modules are added, pull the latest:
+
+```bash
+git pull
+```
+
+If you cannot clone or install anything, use the Binder badge in the repo README — it opens the full notebook environment in your browser with no account and no install required. Note that Binder does not save your work, so use it for reading lecture notebooks only.
+
 ---
 
 ## Which Option Should I Use?
 
 ```
-Do you have VS Code + Python installed on your laptop?
+Do you have VS Code + Python installed?
         |
-        |-- YES --> Option A (recommended)
+        YES → Option A — VS Code Local (recommended)
         |
-        `-- NO
-              |
-              |-- Do you have a GitHub account?
-              |        |
-              |        |-- YES --> Option B — GitHub Codespaces
-              |        |           (VS Code in your browser, no install)
-              |        |
-              |        `-- NO or Codespaces not working
-              |                   |
-              |                   `--> Option C — Google Colab
-              |                        (just needs a Google account)
+        NO
+        |
+        Do you have a GitHub account?
+        |
+        YES → Option B — GitHub Codespaces
+        |     (VS Code in your browser, work is saved)
+        |
+        NO or Codespaces not working
+        |
+        → Option C — Google Colab
+          (needs a Google account, extra steps to submit)
+
 ```
 
 All three options open the same `.ipynb` file and run the same Python code. The difference is only where the code runs.
@@ -51,7 +77,8 @@ The kernel is the Python version that runs your code. Select it once per noteboo
 
 1. Click **"Select Kernel"** in the top right corner of the notebook
 2. Choose **"Python Environments"**
-3. Select your installed Python version (e.g. `Python 3.12.x`)
+3. Select your installed Python (e.g. `Python 3.14.x`)
+4. If you are using a virtual environment, select the one inside your project folder
 
 > ⚠️ If no Python version appears, make sure Python is installed and VS Code has been restarted after installing the Python extension.
 
@@ -67,7 +94,7 @@ The kernel is the Python version that runs your code. Select it once per noteboo
 
 ### Submitting
 
-Push directly from VS Code. See [06-Submit-Push.md](./06-Submit-Push.md).
+Push directly from VS Code. See [07-Submit-Push.md](./07-Submit-Push.md).
 
 ---
 
@@ -192,6 +219,34 @@ Hover between two cells and click **"+ Code"** to insert a new cell.
 
 ---
 
+## Option D — Binder (Read-Only, No Account)
+
+Binder opens the course repo as a live JupyterLab environment in your browser. No account, no install, no setup.
+
+**Use this for:** Reading and running lecture notebooks when you have no other option  
+**Do not use this for:** Exercise notebooks — Binder does not save your work
+
+Click the Binder badge in the course repo README to launch. It takes 1–2 minutes to build on first load.
+
+> ⚠️ Any work done in Binder is lost when you close the tab or the session times out. Never write your exercise answers here.
+
+---
+
+## Comparison
+
+| | Option A | Option B | Option C | Option D |
+|--|---------|---------|---------|---------|
+| **Where it runs** | Your machine | GitHub servers | Google servers | Binder servers |
+| **Account needed** | No | GitHub | Google | None |
+| **Install needed** | Yes | No | No | No |
+| **Saves work** | Yes | Yes | Yes (Google Drive) | No |
+| **Push to GitHub** | Direct | Direct | Manual upload | No |
+| **Works for exercises** | Yes | Yes | Yes | No |
+| **Works for game dev** | Yes | Terminal only | No | No |
+| **Recommended** | Main setup | Official fallback | Last resort | Lecture reading only |
+
+---
+
 ## Common Issues
 
 **VS Code — "No kernel found"**  
@@ -209,7 +264,11 @@ Click Reconnect, then re-run all cells from the top since Colab clears memory on
 **Colab — cannot find the GitHub tab**  
 Go to [colab.research.google.com](https://colab.research.google.com) → File → Open notebook → GitHub → sign in when prompted.
 
-For more issues, see [07-Troubleshooting.md](./07-Troubleshooting.md).
+
+**Binder — takes forever to load**  
+Binder can take up to 5 minutes if the environment has not been built recently. If it fails, try again once. If it keeps failing, use Colab instead.
+
+For more issues, see [08-Troubleshooting.md](./08-Troubleshooting.md).
 
 ---
 
