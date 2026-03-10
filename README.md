@@ -1,1 +1,69 @@
-# Python-Development
+# Python Development
+### MCC | BSIT 2526 | 2nd Year
+
+---
+
+## About This Repository
+
+This is the course reference repository for **Python Development**. It contains lecture notebooks, module guides, and setup documentation for the entire semester.
+
+This repository is **read-only** for students. You do not submit work here. Assignments are distributed separately through GitHub Classroom — the invite link for each module is posted on MS Teams.
+
+---
+
+## Where to Find Things
+
+| What | Where |
+|------|-------|
+| Announcements and deadlines | MS Teams |
+| Theory lectures and recordings | MS Teams |
+| Lecture notebooks and module guides | This repository |
+| Exercises and assignment submission | GitHub Classroom (link on MS Teams per module) |
+
+---
+
+## Module Schedule
+
+| Module | Topic | Guide | Lecture | Status |
+|--------|-------|-------|---------|--------|
+| M00 | Setup and Environment | [Setup Guide](./M00-Setup/README.md) | — | Available |
+| M01 | Variables and Data Types | [M01 Guide](./M01-Variables-and-Data-Types/README.md) | [Lecture](./M01-Variables-and-Data-Types/M01_Lecture.ipynb) | Available |
+| M02 | Operators and Control Flow | — | — | Upcoming |
+| M03 | Loops | — | — | Upcoming |
+| M04 | Functions | — | — | Upcoming |
+| M05 | Lists and Tuples | — | — | Upcoming |
+| M06 | Dictionaries and Sets | — | — | Upcoming |
+| M07 | File Handling | — | — | Upcoming |
+| M08 | Object-Oriented Programming | — | — | Upcoming |
+
+Modules are published as the course progresses. Watch MS Teams for announcements when a new module opens.
+
+---
+
+## Tools Used in This Course
+
+| Tool | Purpose |
+|------|---------|
+| Python 3.x | The programming language |
+| VS Code | Primary code editor |
+| Jupyter Notebooks | Interactive lecture and exercise format |
+| Git | Version control |
+| GitHub | Hosts this repo and your assignment repos |
+| GitHub Classroom | Distributes and collects assignments |
+| GitHub Codespaces | Browser-based VS Code — use if you cannot install locally |
+| Google Colab | Browser-based notebook fallback |
+| MS Teams | Announcements, theory lectures, and recordings |
+
+---
+
+## Getting Started
+
+If this is your first time, begin with the setup guide:
+
+[M00 — Environment Setup](./M00-Setup/README.md)
+
+Follow all steps before attempting Module 01.
+
+---
+
+*Python Development | MCC BSIT 2526*
