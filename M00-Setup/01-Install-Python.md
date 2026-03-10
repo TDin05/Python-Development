@@ -1,4 +1,4 @@
-**# 01 — Install Python
+# 01 — Install Python
 ### Python Development | MCC BSIT 2526
 
 [Back to Setup Overview](./Setup.md)
